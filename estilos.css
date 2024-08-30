@@ -1,0 +1,39 @@
+#Container {
+    height: 500px;
+    width: 100%;
+    background-color: coral;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Espacio entre las cajas */
+}
+
+.boxesA {
+    flex-basis: 100%;
+    height: 100px;
+    background-color: blue;
+    margin-top: 10px;
+}
+
+.boxesB, .boxesC {
+    height: calc(100% - 130px);
+    margin-bottom: 10px; 
+}
+
+.boxesB {
+    flex-grow: 2;
+    background-color: rgb(255, 0, 43);
+}
+
+.boxesC {
+    flex-grow: 1;
+    background-color: rgb(47, 255, 0);
+}
+
+.boxesA, .boxesB{
+    margin-left: 10px;
+}
+
+.boxesA, .boxesC{
+    margin-right: 10px;
+} 
